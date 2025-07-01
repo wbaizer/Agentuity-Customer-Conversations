@@ -40,5 +40,4 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 customer-convos-*.json
 src/tmp/*
-bun.lock
 package-lock.json
