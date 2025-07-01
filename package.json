@@ -10,7 +10,7 @@
     "format": "biome format --write .",
     "lint": "biome lint .",
     "prestart": "agentuity bundle",
-    "start": "bun run .agentuity/index.js"
+    "start": "GOOGLE_APPLICATION_CREDENTIALS=\"$HOME/.config/gcloud/application_default_credentials.json\" bun run .agentuity/index.js"
   },
   "keywords": [
     "agentuity",
@@ -22,14 +22,27 @@
   "private": true,
   "devDependencies": {
     "@biomejs/biome": "^2.0.6",
-    "@types/bun": "^1.2.17"
+    "@types/bun": "^1.2.17",
+    "@ai-sdk/openai": "^1.3.22",
+    "@google-cloud/speech": "^7.1.0",
+    "@google-cloud/storage": "^7.16.0",
+    "@types/sentiment": "^5.0.4",
+    "@types/tmp": "^0.2.6",
+    "@types/fluent-ffmpeg": "^2.1.27",
+    "ai": "^4.3.16",
+    "dotenv": "^16.6.1",
+    "google-auth-library": "^10.1.0",
+    "openai": "^5.8.2",
+    "sentiment": "^5.0.2",
+    "tmp": "^0.2.3",
+    "zod": "^3.25.67"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
     "@agentuity/sdk": "^0.0.128",
-    "openai": "^5.8.2"
+    "fluent-ffmpeg": "^2.1.3"
   },
   "module": "index.ts"
 }

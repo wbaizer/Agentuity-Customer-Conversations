@@ -37,3 +37,8 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 .agentuity-crash-*.json
 .env.development
 .env.production
+
+customer-convos-*.json
+src/tmp/*
+bun.lock
+package-lock.json
